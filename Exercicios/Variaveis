@@ -1,0 +1,10 @@
+nome='Humberto Delgado' # criamos variáveis do tipo String na linha 1 e 2
+empresa='FIAP'
+qtde_funcionarios=500 #variável do tipo int.
+medaMensalidade=856.50 # variável do tipo float.
+
+print(nome + " trabalha na empresa " + empresa)
+# Exibimos o valor das duas primeiras variáveis, separadas por um texto, utilizamos o operador "+", que representa concatenação/junção para string's.
+print("Possui: ", qtde_funcionarios, " funcionarios.")
+print("A média da mensalidade é de: " + str(mediaMensalidade))
+#Exibimos um texto e uma variável do tipo "float", concatenadas através do operador "+". Para que o Python não tente realizar uma operação matemática, devemos utilizar a função str() para converter o conteudo da variável "float" para string, por isso a variável mediaMensalidade está dentro da função str().
