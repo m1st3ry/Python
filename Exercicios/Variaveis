@@ -1,10 +1,16 @@
-nome='Humberto Delgado' # criamos variáveis do tipo String na linha 1 e 2
-empresa='FIAP'
-qtde_funcionarios=500 #variável do tipo int.
-medaMensalidade=856.50 # variável do tipo float.
-
+# Para que a nossa variável comece a realmente variar, introduzimos o "input" para que o usuário comece a entrar com a informação necessária.
+nome=input("Digite um funcionário: ")
+empresa=input("Digite a instituição: ")
+qtde_funcionarios=int(input("Digite a qtde de funcionários: "))
+medaMensalidade=float(input("Digite a média da mensalidade: "))
+#Note que passamos a utilizar int e float, pois o input captura apenas strings, entamos estaremos convertendo essa string para o tipo de dado que desejamos armazenar em sua respectiva variavel.
+mediaMensalidade + " trabalha na empresa " + empresa
 print(nome + " trabalha na empresa " + empresa)
-# Exibimos o valor das duas primeiras variáveis, separadas por um texto, utilizamos o operador "+", que representa concatenação/junção para string's.
 print("Possui: ", qtde_funcionarios, " funcionarios.")
 print("A média da mensalidade é de: " + str(mediaMensalidade))
-#Exibimos um texto e uma variável do tipo "float", concatenadas através do operador "+". Para que o Python não tente realizar uma operação matemática, devemos utilizar a função str() para converter o conteudo da variável "float" para string, por isso a variável mediaMensalidade está dentro da função str().
+# Agora para finalizar, acrescentamos 4 linhas que utilizam  uma função 'type()'
+# Esta função retorna o tipo de dado que estiver dentro dos seus parênteses, conforme observamos no código abaixo:
+print("==============Verifique os tipos de dados abaixo:==============")print("O tipo de dado da variavel [nome] é: ",type(nome))
+print("O tipo de dado da variavel [empresa] é: ",type(empresa))
+print("O tipo de dado da variavel [qtde_funcionarios] é: ",type(qtde_funcionarios))
+print("O tipo de dado da variavel [mediaMensalidade] é: ",type(mediaMensalidade))
