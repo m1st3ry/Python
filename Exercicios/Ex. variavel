@@ -7,3 +7,5 @@ valor=input("Entre com o valor do evento: ")
 
 print("Declaro para o senhor "+ responsavel + " que o senhor " +
 funcionario + " esteve presente no evento " + evento + "e gastou o valor de " + str(valor) + " com a entrada.")
+
+#Lembrando que ao lidar com strings nas entradas das variáveis, o valor não será uma entrada de stringa, por isso colocamos no print, a função str()
