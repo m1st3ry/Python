@@ -1,0 +1,9 @@
+#“Declaro  para  o  senhor  Gonçalves  Dias  que  o  senhor  Humberto  Delgado esteve  presente  no  evento  SecurityCup  e  gastou  o  valor  de  R$  30,00  com  a entrada.”
+
+responsavel=input("Entre com o nome do responsável: ")
+funcionario=input("Entre com o nome do funcionário: ")
+evento=input("Entre com o nome do evento: ")
+valor=input("Entre com o valor do evento: ")
+
+print("Declaro para o senhor "+ responsavel + " que o senhor " +
+funcionario + " esteve presente no evento " + evento + "e gastou o valor de " + str(valor) + " com a entrada.")
