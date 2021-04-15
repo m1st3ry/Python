@@ -1,14 +1,19 @@
 # Para que a nossa variável comece a realmente variar, introduzimos o "input" para que o usuário comece a entrar com a informação necessária.
+
 nome=input("Digite um funcionário: ")
 empresa=input("Digite a instituição: ")
 qtde_funcionarios=int(input("Digite a qtde de funcionários: "))
 mediaMensalidade=float(input("Digite a média da mensalidade: "))
+
 #Note que passamos a utilizar int e float, pois o input captura apenas strings, entamos estaremos convertendo essa string para o tipo de dado que desejamos armazenar em sua respectiva variavel.
+
 print(nome + " trabalha na empresa " + empresa)
 print("Possui: ", qtde_funcionarios, " funcionarios.")
 print("A média da mensalidade é de: " + str(mediaMensalidade))
+
 # Agora para finalizar, acrescentamos 4 linhas que utilizam  uma função 'type()'.
 # Esta função retorna o tipo de dado que estiver dentro dos seus parênteses, conforme observamos no código abaixo:
+
 print("==============Verifique os tipos de dados abaixo:==============")
 print("O tipo de dado da variavel [nome] é: ",type(nome))
 print("O tipo de dado da variavel [empresa] é: ",type(empresa))
