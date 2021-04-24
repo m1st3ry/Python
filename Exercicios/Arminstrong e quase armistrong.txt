@@ -18,6 +18,7 @@ while armistrong>0:
 
 if numero == soma:
     print('True')
-    
+    #retorna True, se o numero digitado for de armistrong.
 else:
     print('False')
+    #retorna False, se o numero digitado não for de armstrong.
