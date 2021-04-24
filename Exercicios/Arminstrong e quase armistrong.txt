@@ -1,0 +1,23 @@
+numero = int(input("Enter the number: ")) 
+#Recebe numero inteiro de usuario.
+
+potencia = len(str(numero))
+#atribui a variavel potencia, o numero de digitos na entrada do usuario.
+
+soma = 0
+#soma inicia em zero.
+
+armistrong = numero
+#armistrong recebe valor da variavel numero após a condição.
+
+while armistrong>0:
+
+    digitos = armistrong%10
+    soma = soma + (digitos**potencia)
+    armistrong = armistrong//10
+
+if numero == soma:
+    print('True')
+    
+else:
+    print('False')
