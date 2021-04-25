@@ -1,0 +1,12 @@
+def numero_de_Armstrong()
+numero = int(input("Enter the number: "))
+pontencia = len(str(numero))
+soma = 0
+armstrong = numero
+while armstrong>0:
+    digitos = armstrong%10
+    soma = soma + (digitos**pontencia)
+    armstrong = armstrong//10
+return armstrong
+
+print(if numero == numero_de_Armstrong() 'True' else 'False')
