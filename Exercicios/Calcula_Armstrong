@@ -7,6 +7,6 @@ while armstrong>0:
     digitos = armstrong%10
     soma = soma + (digitos**pontencia)
     armstrong = armstrong//10
-return armstrong
-
-print(if numero == numero_de_Armstrong() 'True' else 'False')
+    n == armstrong
+    return True or False
+pass
