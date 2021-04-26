@@ -1,12 +1,12 @@
-def numero_de_Armstrong()
-numero = int(input("Enter the number: "))
-potencia = len(str(numero))
-soma = 0
-armstrong = numero
-while armstrong>0:
-    digitos = armstrong%10
-    soma = soma + (digitos**pontencia)
-    armstrong = armstrong//10
-    numero == armstrong
-    return True or False
-pass
+def eh_armstrong(n):
+    n = int(input())
+    potencia = len(str(n))
+    soma = 0
+    armstrong = n
+    while armstrong >= 0:
+        digitos = armstrong % 10
+        soma = soma + (digitos ** potencia)
+        armstrong = armstrong // 10
+        n == armstrong
+        return True
+    return False
