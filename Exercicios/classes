@@ -1,0 +1,12 @@
+#Class
+#Syntaxe
+
+#Marca, Memoria Ram, Placa de video
+class Computador:
+    def __init__(self):
+
+    pass
+
+computador1 = Computador()
+computador2 = Computador()
+computador3 = Computador()
