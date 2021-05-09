@@ -1,7 +1,7 @@
 # Programação Orientada a Objetos
 # AC01 ADS-EaD - Números especiais
 #
-# Email Impacta: __________@aluno.faculdadeimpacta.com.br
+# Email Impacta: robinson.silva@aluno.faculdadeimpacta.com.br
 
 def eh_primo(n):
 
@@ -54,12 +54,12 @@ def conta_primos(s):
 
 def eh_armstrong(n):
 
-    armstrong = len(str(n))
+    ord = len(str(n))
     i = 0
     aux = n
     while aux > 0:
        digit = aux % 10
-       i += digit ** armstrong
+       i += digit ** ord
        aux //= 10
     if n == i:
         return True
@@ -84,7 +84,10 @@ def eh_quase_armstrong(n):
     for d in digitos:
         res += d**n_digitos
 
-    return res == n + 1 or res == n + 1
+    if  res == n + 1 or res == n - 1 and n >= 0:
+        return True
+    else:
+        return False
 
 
 def lista_armstrong(n):
