@@ -1,0 +1,5 @@
+bicycles = ['trek', 'cannondale', 'redline', 'specialized']
+message = "My first bicycle was a " + bicycles[0].title() + "."
+print(message)
+
+# Criamos uma frase usando o valor em bicycles[0] e a armazenamos na variavel message, a saida é uma frase simples sobre a primeira bicicleta da lista.
