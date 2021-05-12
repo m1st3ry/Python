@@ -1,0 +1,13 @@
+nomes = ['marcos', 'claudio', 'cleiton', 'pedro']
+print (nomes[0])
+print (nomes[1])
+print (nomes[2])
+print (nomes[3])
+mensagem1 = "Bom dia, motorista " + nomes[0].title() + "."
+mensagem2 = "Boa tarde, motorista " + nomes[-3].title() + "."
+mensagem3 = "Boa noite, funcionario " + nomes[-2].title() + "."
+mensagem4 = "Tudo bem " + nomes[-1].title() + "?"
+print(mensagem1)
+print(mensagem2)
+print(mensagem3)
+print(mensagem4)
