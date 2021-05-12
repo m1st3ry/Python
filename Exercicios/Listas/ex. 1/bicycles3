@@ -1,0 +1,6 @@
+bicycles = ['trek', 'cannondale', 'redline', 'specialized'] #lista de bikes.
+print(bicycles[1])
+print(bicycles[2])
+# Esse codigo devolve a segunda e a quarta bicicletas da lista:
+# cannondale
+# specialized
