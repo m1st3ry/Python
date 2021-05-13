@@ -1,0 +1,5 @@
+madeira = ['cambara', 'pinus','cumaru','cedro']
+print ("As vigas são de " + madeira[0].title() +".")
+print ("As tabuas são de " + madeira[-1].title() + ".")
+print ("O " + madeira[1].title() + " é uma madeira muito usado na construção e \n descartada em sequencia, por ter baixa durabilidade.")
+print ("O deck é de" + madeira[-2].title() +".")
