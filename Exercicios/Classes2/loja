@@ -1,0 +1,33 @@
+from produto import Produto
+
+
+class Loja:
+    def __init__(self, nome):
+        self.nome= nome
+        self._produtos = []
+
+    @property
+    def produtos(self):
+            return self._produtos
+
+    def inserir_produtos(self, produto):
+        if not isinstance(produto, Produto):
+            raise TypeError
+            self._produtos.append(produto)
+
+    def listar_produtos(self):
+        for produto in self._produtos:
+            produto.imprimir()
+            print()
+
+
+lojinha = Loja('YellowSub')
+
+lojinha.inserir_produtos(Produto('rato'))
+lojinha.inserir_produtos(Produto('mouse', 'sem fio', 80.99))
+lojinha.inserir_produtos(Produto('teclado', 'slim', 155.99))
+lojinha.inserir_produtos(Produto('monitor', 'curvo', 3000.00))
+
+print(f'\n=================Lojinha {lojinha.nome} ============= \n')
+print('>>Produtos cadastrados: ')
+lojinha.listar_produtos()
