@@ -1,0 +1,40 @@
+class Produto:
+    def __init__(self, nome, descricao, preco):
+        self.nome = nome
+        self.descricao = descricao
+        self._preco = preco
+        #self._preco = preco # nao publico
+        self.preco = preco # setter
+        # atributo = parametro
+    def imprimir(self):
+        print(f'\nProduto: {self.nome}\nDescriçao: {self.descricao}\nPreço: {self.preco}')
+
+    #getter - retorna o valor do atributo nao publico
+    @property
+    def preco(self):
+        return self._preco
+
+    @preco.setter
+    def preco(self, novo_preco):
+        if novo_preco < 0:
+            raise ValueError
+        self._preco = novo_preco
+
+
+
+# Testando a classe Produto
+prod_1 = Produto('mouse', 'sem fio', 80.99)
+prod_2 = Produto('teclado', 'slim', 155.99)
+
+
+#prod_1.preco = -57
+try:
+    prod_3 = Produto('monitor', 'curvo', -3000.00)
+except:
+    print('\n---Preço não pode ser negativo!')
+
+prod_1.imprimir()
+print('-'*30)
+prod_2.imprimir()
+print('-'*30)
+#prod_3.imprimir()
