@@ -1,0 +1,8 @@
+class Cliente:
+    pass
+
+class Conta:
+    pass
+
+class Banco:
+    pass
