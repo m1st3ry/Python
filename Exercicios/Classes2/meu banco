@@ -1,8 +1,44 @@
 class Cliente:
-    pass
 
-class Conta:
-    pass
+    def __init__(self, nome, telefone, email):
+        self.nome = nome
+        self.telefone = telefone
+        self.email = email
 
-class Banco:
-    pass
+    @property
+    def nome(self):
+        return self.nome
+
+    @property
+    def telefone(self):
+        return self.telefone
+
+    @telefone.setter
+    def telefone(self, novo_telefone):
+        if isinstance(novo_telefone, str):
+            raise TypeError
+        for d in novo_telefone:
+            if d not in '0123456789-() ':
+                raise ValueError
+        self._telefone = novo_telefone
+
+    @property
+    def email(self):
+        """Property do email do cliente"""
+        return self._email
+
+    @email.setter
+    def email(self, novo_email):
+        if not isinstance(novo_email, str):
+            raise TypeError
+
+        numero_arrobas = 0
+
+        for c in novo_email:
+            if c == "@":
+                numero_arrobas += 1
+
+        if numero_arrobas != 1:
+            raise ValueError
+
+        self._email = novo_email
